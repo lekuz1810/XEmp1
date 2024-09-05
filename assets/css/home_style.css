@@ -279,6 +279,7 @@
   background-color: var(--primary);
   height: auto;
 }
+
 /* --------------- aboutus st2 --------------- */
 .tc-aboutus-st2 {
   position: relative;
@@ -309,15 +310,6 @@
 .tc-aboutus-st2 .content-card .number-card p {
   font-size: 18px;
   margin-bottom: 15px;
-}
-.tc-aboutus-st2 .content-card .number-card .stars {
-  font-size: 14px;
-  color: var(--cr-blue1);
-  margin-bottom: 30px;
-  font-size: 12px;
-}
-.tc-aboutus-st2 .content-card .number-card .logo {
-  height: 30px;
 }
 
 @media screen and (max-width: 991px) {
@@ -460,6 +452,20 @@
     font-size: 35px;
   }
 }
+/* our-clients */
+.our-clients{
+  margin-top: 5px;
+  width: 100%;
+  height: auto;
+  background-color: var(--secondaryshade);
+  padding: 20px;
+}
+.client_logo{
+  width: auto;
+  height: 150px;
+  margin: 0 10px;
+  border-radius: 10px;
+}
 
 /* =--------------XEmp team login page css---------- */
 .tc-header-st3{
@@ -512,4 +518,99 @@
   background-color: var(--secondaryshade);
   color: var(--secondary);
   border: 1px solid var(--secondary);
+}
+
+/* --------------- About us PAge--------------- */
+.Aboutus-page {
+  position: relative;
+  background-color: var(--primary);
+  padding: 50px 0px;
+}
+.Aboutus-page .content-card {
+  position: relative;
+  background-color: var(--secondary);
+  border-radius: 10px;
+  padding: 50px 30px;
+  margin-top: 70px;
+}
+.Aboutus-page .content-card .lines {
+  position: absolute;
+  top: 60px;
+  left: 5%;
+  height: 100%;
+  pointer-events: none;
+}
+.Aboutus-page .content-card .number-card {
+  position: relative;
+  text-align: center;
+  padding: 30px 0;
+}
+.Aboutus-page .content-card .number-card h2 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+.Aboutus-page .content-card .number-card p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 991px) {
+  .Aboutus-page {
+    position: relative;
+    background-color: var(--primary);
+    padding: 0px 0px;
+    padding-bottom: 20px;
+  }
+  .Aboutus-page .content-card {
+    padding: 10px 0px;
+    margin-top: 0px;
+  }
+  .Aboutus-page .content-card {
+    overflow: hidden;
+  }
+  .Aboutus-page .content-card .number-card {
+    border-radius: 10px;
+    margin: 15px 0;
+    padding: 0px 15px;
+  }
+}
+
+
+/** ------------------ contact us Page ---------------- **/
+.section-Contactus{
+  background-image: linear-gradient(var(--primary) 70%, var(--secondaryshade) 30%);
+  padding-top: 150px;
+}
+.cat-item{
+  background: var(--secondary);
+  border-radius: 10px;
+  color: var(--secondary);
+  text-decoration: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.cat-item div {
+  background: var(--primary);
+  transition: .5s;
+}
+
+.cat-item:hover div {
+  background: var(--secondary);
+  border-color: transparent;
+}
+.cat-item:hover div * {
+  color: var(--primary) !important;
+}
+.icon-card{
+  padding: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon{
+  font-size: 60px;
+}
+@media screen and (max-width: 991px) {
+  .section-Contactus{
+    padding-top: 0px;
+  }
 }
